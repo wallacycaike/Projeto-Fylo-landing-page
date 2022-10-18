@@ -1,0 +1,362 @@
+.header{
+    width: 100%;
+
+    .navbar{
+        font-family: $primary-font;
+        font-size: 14px;
+        padding: 18px 18px;
+        min-height: 10vh;
+        // height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        .navbar-logo{
+            width: 90px;
+        }
+        
+        .navbar-list{
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .navbar-item{
+            margin: 0px 10px;
+    
+            a{
+                text-decoration: none;
+                color: $dark-blue;
+
+                &:hover{
+                    text-decoration: underline $dark-blue;
+                }
+            }
+        }
+    }    
+}
+
+.primary-content{
+    min-height: 90vh;
+    padding: 0px 18px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+
+    .primary-texts{
+        text-align: center;
+        padding-top: 30px;
+        max-width: 600px;
+
+        .primary-title{
+            @include title;
+            line-height: 1.5;
+        }
+
+        .primary-paragraph{
+            margin-top: 30px;
+            color: $dark-blue;
+        }
+
+        .primary-inputs{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .primary-input-email{
+                height: 45px;
+                width: 300px;
+                padding: 13px;
+                border: 1px solid $dark-blue;
+                border-radius: 5px;
+                transition: 0.2s;
+
+                &:hover{
+                    padding: 16px;
+                }
+            }
+
+            .primary-button{
+                height: 45px;
+                width: 300px;
+                margin-top: 15px;
+                padding: 13px 0px;
+                font-family: $primary-font;
+                font-size: 14px;
+                font-weight: 700;
+                color: $grayish-blue;
+                background-color: $bright-blue;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: hsl(224, 93%, 48%);
+                }
+            }
+        }
+    }
+
+    .primary-img{
+        max-width: 600px;
+        padding: 0px 10px;
+
+        .primary-illustration{
+            width: 100%;
+            // width: 300px; 
+        }
+    }
+}
+
+.secondary-content{
+    background-image: url("../../images/bg-curve-mobile.svg");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+    padding: 0px 18px;
+    margin: 80px 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+
+    .secondary-texts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: center;
+        padding-top: 50px;
+        max-width: 600px;
+
+        .secondary-title{
+            @include title;
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+        }
+
+        .secondary-paragraph01{
+            color: $desaturated-blue;
+            margin-bottom: 30px;
+        }
+
+        .secondary-paragraph02{
+            color: $desaturated-blue;
+            margin-bottom: 30px;
+        }
+
+        .secondary-link{
+            padding-bottom: 5px;
+            text-decoration: none;
+            font-family: $primary-font;
+            color: $moderate-cyan;
+            border-bottom: 2px solid $moderate-cyan;
+            margin-bottom: 50px;
+
+            &:hover{
+                color: hsl(170, 45%, 23%);
+                border-bottom: 2px solid hsl(170, 45%, 23%);
+            }
+        }
+
+        .testimonial{
+            max-width: 400px;
+            background-color: #fff;
+            // background-color: $grayish-blue;
+            box-shadow: 1px 1px 10px $light-gray;
+            border-radius: 10px;
+            padding: 20px;
+            font-family: $primary-font;
+
+
+            .testimonial-text{
+                color: $dark-blue;
+                line-height: 1.8;
+                font-size: 12px;
+                margin-bottom: 15px;
+            }
+
+            .testimonial-infos{
+                display: flex;
+                align-items: center;
+
+                .testimonial-img{
+                    width: 30px;
+                    border-radius: 50%;
+                    margin-right: 8px;
+                }
+
+                .testimonial-name{
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: $dark-blue;
+                }
+
+                .testimonial-job{
+                    font-size: 8px;
+                    color: $dark-blue;
+                }
+            }
+        }
+    }
+
+    .secondary-img{
+        max-width: 600px;
+        padding: 80px 10px 0px 10px;
+
+        .secondary-ilustration{
+            width: 100%;
+        }
+    }
+}
+
+.tertiary-content{
+    min-height: 50vh;
+    background-color: $desaturated-blue;
+    padding: 0px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .tertiary-texts{
+        text-align: center;
+        color: $grayish-blue;
+
+        .tertiary-title{
+            margin-bottom: 30px;
+        }
+
+        .tertiary-paragraph{
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+    }
+
+    .tertiary-inputs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .tertiary-input-email{
+            height: 45px;
+            width: 280px;
+            padding: 13px;
+            border: none;
+            // border-radius: 5px;
+            transition: 0.2s;
+
+            &:hover{
+                padding: 16px;
+            }
+        }
+
+        .tertiary-button{
+            height: 45px;
+            width: 280px;
+            margin-top: 10px;
+            padding: 13px 0px;
+            font-family: $primary-font;
+            font-size: 13px;
+            font-weight: 700;
+            color: $grayish-blue;
+            background-color: $bright-blue;
+            border: none;
+            // border-radius: 5px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: hsl(224, 93%, 48%);
+            }
+        }
+    }
+}
+
+.footer{
+    min-height: 50vh;
+    padding: 60px 30px;
+    background-color: $dark-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    .footer-about{
+        margin-bottom: 50px;
+
+        .footer-logo{
+            margin-bottom: 30px;
+        }
+
+        .phone{
+            color: $grayish-blue;
+            margin-bottom: 10px;
+
+            i{
+                margin-right: 10px;
+            }
+        }
+
+        .email{
+            color: $grayish-blue;
+
+            i{
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .footer-links{
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        
+        a{
+            text-decoration: none;
+            color: $grayish-blue;
+            padding-bottom: 15px;
+
+            &:hover{
+                color: $light-gray;
+                text-decoration: underline $light-gray;
+            }
+        }
+    }
+
+    .footer-links02{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+
+        a{
+            text-decoration: none;
+            color: $grayish-blue;
+            padding-bottom: 15px;
+
+            &:hover{
+                color: $light-gray;
+                text-decoration: underline $light-gray;
+            }
+        }
+    }
+
+    .footer-socials{
+        align-self: center;
+
+        a{
+            font-size: 1.5rem;
+            color: $grayish-blue;
+            padding: 0px 8px;
+
+            &:hover{
+                color: $light-gray;
+            }
+        }
+    }
+}

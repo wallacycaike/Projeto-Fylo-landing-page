@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap");
+.header {
+  width: 100%;
+}
+.header .navbar {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  padding: 18px 18px;
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .navbar .navbar-logo {
+  width: 90px;
+}
+.header .navbar .navbar-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.header .navbar .navbar-item {
+  margin: 0px 10px;
+}
+.header .navbar .navbar-item a {
+  text-decoration: none;
+  color: hsl(243deg, 87%, 12%);
+}
+.header .navbar .navbar-item a:hover {
+  text-decoration: underline hsl(243deg, 87%, 12%);
+}
+
+.primary-content {
+  min-height: 90vh;
+  padding: 0px 18px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+.primary-content .primary-texts {
+  text-align: center;
+  padding-top: 30px;
+  max-width: 600px;
+}
+.primary-content .primary-texts .primary-title {
+  color: hsl(243deg, 87%, 12%);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.primary-content .primary-texts .primary-paragraph {
+  margin-top: 30px;
+  color: hsl(243deg, 87%, 12%);
+}
+.primary-content .primary-texts .primary-inputs {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.primary-content .primary-texts .primary-inputs .primary-input-email {
+  height: 45px;
+  width: 300px;
+  padding: 13px;
+  border: 1px solid hsl(243deg, 87%, 12%);
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.primary-content .primary-texts .primary-inputs .primary-input-email:hover {
+  padding: 16px;
+}
+.primary-content .primary-texts .primary-inputs .primary-button {
+  height: 45px;
+  width: 300px;
+  margin-top: 15px;
+  padding: 13px 0px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(240deg, 75%, 98%);
+  background-color: hsl(224deg, 93%, 58%);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.primary-content .primary-texts .primary-inputs .primary-button:hover {
+  background-color: hsl(224deg, 93%, 48%);
+}
+.primary-content .primary-img {
+  max-width: 600px;
+  padding: 0px 10px;
+}
+.primary-content .primary-img .primary-illustration {
+  width: 100%;
+}
+
+.secondary-content {
+  background-image: url("../../images/bg-curve-mobile.svg");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 0px 18px;
+  margin: 80px 0px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.secondary-content .secondary-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  max-width: 600px;
+}
+.secondary-content .secondary-texts .secondary-title {
+  color: hsl(243deg, 87%, 12%);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+.secondary-content .secondary-texts .secondary-paragraph01 {
+  color: hsl(238deg, 22%, 44%);
+  margin-bottom: 30px;
+}
+.secondary-content .secondary-texts .secondary-paragraph02 {
+  color: hsl(238deg, 22%, 44%);
+  margin-bottom: 30px;
+}
+.secondary-content .secondary-texts .secondary-link {
+  padding-bottom: 5px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  color: hsl(170deg, 45%, 43%);
+  border-bottom: 2px solid hsl(170deg, 45%, 43%);
+  margin-bottom: 50px;
+}
+.secondary-content .secondary-texts .secondary-link:hover {
+  color: hsl(170deg, 45%, 23%);
+  border-bottom: 2px solid hsl(170deg, 45%, 23%);
+}
+.secondary-content .secondary-texts .testimonial {
+  max-width: 400px;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px hsl(0deg, 0%, 75%);
+  border-radius: 10px;
+  padding: 20px;
+  font-family: "Raleway", sans-serif;
+}
+.secondary-content .secondary-texts .testimonial .testimonial-text {
+  color: hsl(243deg, 87%, 12%);
+  line-height: 1.8;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.secondary-content .secondary-texts .testimonial .testimonial-infos {
+  display: flex;
+  align-items: center;
+}
+.secondary-content .secondary-texts .testimonial .testimonial-infos .testimonial-img {
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.secondary-content .secondary-texts .testimonial .testimonial-infos .testimonial-name {
+  font-size: 12px;
+  font-weight: bold;
+  color: hsl(243deg, 87%, 12%);
+}
+.secondary-content .secondary-texts .testimonial .testimonial-infos .testimonial-job {
+  font-size: 8px;
+  color: hsl(243deg, 87%, 12%);
+}
+.secondary-content .secondary-img {
+  max-width: 600px;
+  padding: 80px 10px 0px 10px;
+}
+.secondary-content .secondary-img .secondary-ilustration {
+  width: 100%;
+}
+
+.tertiary-content {
+  min-height: 50vh;
+  background-color: hsl(238deg, 22%, 44%);
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tertiary-content .tertiary-texts {
+  text-align: center;
+  color: hsl(240deg, 75%, 98%);
+}
+.tertiary-content .tertiary-texts .tertiary-title {
+  margin-bottom: 30px;
+}
+.tertiary-content .tertiary-texts .tertiary-paragraph {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.tertiary-content .tertiary-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tertiary-content .tertiary-inputs .tertiary-input-email {
+  height: 45px;
+  width: 280px;
+  padding: 13px;
+  border: none;
+  transition: 0.2s;
+}
+.tertiary-content .tertiary-inputs .tertiary-input-email:hover {
+  padding: 16px;
+}
+.tertiary-content .tertiary-inputs .tertiary-button {
+  height: 45px;
+  width: 280px;
+  margin-top: 10px;
+  padding: 13px 0px;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: hsl(240deg, 75%, 98%);
+  background-color: hsl(224deg, 93%, 58%);
+  border: none;
+  cursor: pointer;
+}
+.tertiary-content .tertiary-inputs .tertiary-button:hover {
+  background-color: hsl(224deg, 93%, 48%);
+}
+
+.footer {
+  min-height: 50vh;
+  padding: 60px 30px;
+  background-color: hsl(243deg, 87%, 12%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.footer .footer-about {
+  margin-bottom: 50px;
+}
+.footer .footer-about .footer-logo {
+  margin-bottom: 30px;
+}
+.footer .footer-about .phone {
+  color: hsl(240deg, 75%, 98%);
+  margin-bottom: 10px;
+}
+.footer .footer-about .phone i {
+  margin-right: 10px;
+}
+.footer .footer-about .email {
+  color: hsl(240deg, 75%, 98%);
+}
+.footer .footer-about .email i {
+  margin-right: 10px;
+}
+.footer .footer-links {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-links a {
+  text-decoration: none;
+  color: hsl(240deg, 75%, 98%);
+  padding-bottom: 15px;
+}
+.footer .footer-links a:hover {
+  color: hsl(0deg, 0%, 75%);
+  text-decoration: underline hsl(0deg, 0%, 75%);
+}
+.footer .footer-links02 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.footer .footer-links02 a {
+  text-decoration: none;
+  color: hsl(240deg, 75%, 98%);
+  padding-bottom: 15px;
+}
+.footer .footer-links02 a:hover {
+  color: hsl(0deg, 0%, 75%);
+  text-decoration: underline hsl(0deg, 0%, 75%);
+}
+.footer .footer-socials {
+  align-self: center;
+}
+.footer .footer-socials a {
+  font-size: 1.5rem;
+  color: hsl(240deg, 75%, 98%);
+  padding: 0px 8px;
+}
+.footer .footer-socials a:hover {
+  color: hsl(0deg, 0%, 75%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
