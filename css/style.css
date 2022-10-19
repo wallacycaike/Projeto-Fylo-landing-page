@@ -6,8 +6,7 @@
 .header .navbar {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  min-height: 10vh;
-  padding: 0px 18px;
+  padding: 40px 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,12 +14,12 @@
 @media (min-width: 1024px) {
   .header .navbar {
     font-size: 18px;
-    padding: 0px 36px;
+    padding: 40px 36px;
   }
 }
 @media (min-width: 1400px) {
   .header .navbar {
-    padding: 0px 65px;
+    padding: 40px 65px;
   }
 }
 .header .navbar .navbar-logo {
@@ -158,21 +157,20 @@
   width: 100%;
 }
 
-.secondary-content {
-  background-image: url("../../images/bg-curve-mobile.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  padding: 80px 18px 80px 18px;
+.secondary-content .secondary-bgcurved {
+  width: 100%;
+  display: block;
+}
+.secondary-content .secondary-itens {
+  background-color: #F8F8FE;
+  padding: 80px 18px;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
 }
 @media (min-width: 1024px) {
-  .secondary-content {
-    background-image: url("../../images/bg-curve-desktop.svg");
+  .secondary-content .secondary-itens {
     justify-content: space-evenly;
   }
 }
@@ -183,20 +181,39 @@
   padding-top: 50px;
   max-width: 600px;
 }
+@media (min-width: 1200px) {
+  .secondary-content .secondary-texts {
+    padding: 0;
+  }
+}
 .secondary-content .secondary-texts .secondary-title {
   color: hsl(243deg, 87%, 12%);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 1.4rem;
   margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .secondary-content .secondary-texts .secondary-title {
+    font-size: 1.7rem;
+  }
 }
 .secondary-content .secondary-texts .secondary-paragraph01 {
   color: hsl(238deg, 22%, 44%);
   margin-bottom: 30px;
 }
+@media (min-width: 1024px) {
+  .secondary-content .secondary-texts .secondary-paragraph01 {
+    font-size: 1.1rem;
+  }
+}
 .secondary-content .secondary-texts .secondary-paragraph02 {
   color: hsl(238deg, 22%, 44%);
   margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .secondary-content .secondary-texts .secondary-paragraph02 {
+    font-size: 1.1rem;
+  }
 }
 .secondary-content .secondary-texts .secondary-link {
   padding-bottom: 5px;
@@ -244,12 +261,6 @@
 }
 .secondary-content .secondary-img {
   max-width: 600px;
-  padding: 0px 10px 0px 10px;
-}
-@media (min-width: 768px) {
-  .secondary-content .secondary-img {
-    padding: 120px 10px 0px 10px;
-  }
 }
 .secondary-content .secondary-img .secondary-ilustration {
   width: 100%;
@@ -436,12 +447,11 @@
   .primary-content .primary-texts .primary-inputs {
     align-items: flex-start;
   }
-  .secondary-content {
+  .secondary-content .secondary-itens {
     flex-direction: row;
   }
-  .secondary-content .secondary-texts {
+  .secondary-content .secondary-itens .secondary-texts {
     align-items: flex-start;
-    margin-right: 20px;
   }
 }
 @media (min-width: 1400px) {

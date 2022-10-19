@@ -13,6 +13,10 @@
   <!-- FONT AWESOME -->
   <script src="https://kit.fontawesome.com/97248c65c4.js" crossorigin="anonymous"></script>
 
+  <!-- Animate On Scroll Library CSS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- TITLE -->
   <title>Fylo - Home</title>
 
 </head>
@@ -29,7 +33,7 @@
   </header>
 
   <section class="primary-content">
-    <div class="primary-texts">
+    <div class="primary-texts" data-aos="fade-up" data-aos-duration="1200">
       <h1 class="primary-title title">Todos os seus arquivos em um local seguro, acessível em qualquer lugar.</h1>
       <p class="primary-paragraph">Fylo guarda seus arquivos mais importantes em um local seguro. Acesse-os sempre que precisar, compartilhe e colabore com amigos, familiares e colegas de trabalho.</p>
       <div class="primary-inputs">
@@ -37,31 +41,34 @@
         <button class="primary-button">Iniciar</button>
       </div>
     </div>
-    <div class="primary-img">
+    <div class="primary-img" data-aos="fade-down" data-aos-duration="1200">
       <img class="primary-illustration" src="images/illustration-1.svg" alt="illustration1">
     </div>
   </section>
 
   <section class="secondary-content">
-    <div class="secondary-texts">
-      <h2 class="secondary-title title">Mantenha-se produtivo, onde quer que esteja</h2>
-      <p class="secondary-paragraph01">Nunca deixe a localização ser um problema ao acessar seus arquivos. A Fylo cobre todas as suas necessidades de armazenamento de arquivos.</p>
-      <p class="secondary-paragraph02">Compartilhe arquivos e pastas com segurança com amigos, familiares e colegas para colaboração ao vivo. Não são necessários anexos de e-mail!</p>
-      <a href="#" class="secondary-link">Veja como Fylo funciona <i class="fa-solid fa-circle-arrow-right"></i></a>
-      <div class="testimonial">
-        <img class="testimonial-quotes" src="images/icon-quotes.svg" alt="icon-quotes">
-        <p class="testimonial-text">A Fylo melhorou a produtividade de nossa equipe em uma ordem de magnitude. Desde a mudança, nossa equipe se tornou uma máquina de colaboração bem lubrificada.</p>
-        <div class="testimonial-infos">
-          <img class="testimonial-img" src="images/avatar-testimonial.jpg" alt="testimonial">
-          <div class="testimonial-about">
-            <p class="testimonial-name">Kyle Burton</p>
-            <p class="testimonial-job">Founder & CEO, Huddle</p>
+    <img class="secondary-bgcurved" src="images/bg-curve-desktop.svg" alt="bg-curve">
+    <div class="secondary-itens">
+      <div class="secondary-texts">
+        <h2 class="secondary-title title" data-aos="fade-right" data-aos-duration="1200">Mantenha-se produtivo, onde quer que esteja</h2>
+        <p class="secondary-paragraph01" data-aos="fade-right" data-aos-duration="1200">Nunca deixe a localização ser um problema ao acessar seus arquivos. A Fylo cobre todas as suas necessidades de armazenamento de arquivos.</p>
+        <p class="secondary-paragraph02" data-aos="fade-right" data-aos-duration="1200">Compartilhe arquivos e pastas com segurança com amigos, familiares e colegas para colaboração ao vivo. Não são necessários anexos de e-mail!</p>
+        <a href="#" class="secondary-link" data-aos="fade-right" data-aos-duration="1200">Veja como Fylo funciona <i class="fa-solid fa-circle-arrow-right"></i></a>
+        <div class="testimonial" data-aos="zoom-in-up" data-aos-duration="1800">
+          <img class="testimonial-quotes" src="images/icon-quotes.svg" alt="icon-quotes">
+          <p class="testimonial-text">A Fylo melhorou a produtividade de nossa equipe em uma ordem de magnitude. Desde a mudança, nossa equipe se tornou uma máquina de colaboração bem lubrificada.</p>
+          <div class="testimonial-infos">
+            <img class="testimonial-img" src="images/avatar-testimonial.jpg" alt="testimonial">
+            <div class="testimonial-about">
+              <p class="testimonial-name">Kyle Burton</p>
+              <p class="testimonial-job">Founder & CEO, Huddle</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="secondary-img">
-      <img src="images/illustration-2.svg" alt="illustration2" class="secondary-ilustration">
+      <div class="secondary-img" data-aos="flip-left" data-aos-duration="1800">
+        <img src="images/illustration-2.svg" alt="illustration2" class="secondary-ilustration">
+      </div>
     </div>
   </section>
 
@@ -103,5 +110,11 @@
       <a href="#"><i class="fa-brands fa-instagram"></i></a>
     </div>
   </footer>
+
+  <!-- Animate On Scroll Library SCRIPT-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
