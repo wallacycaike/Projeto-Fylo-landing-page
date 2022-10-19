@@ -21,8 +21,8 @@ This is a solution to the [Fylo landing page with two column layout challenge on
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/fylo-landing-page-ptbr-html-css-sass-jIMc_QKmDE)
-- Live Site URL: [Add live site URL here](https://wat-fylo.vercel.app/)
+- Solution URL: [https://www.frontendmentor.io/solutions/fylo-landing-page-ptbr-html-css-sass-jIMc_QKmDE](https://www.frontendmentor.io/solutions/fylo-landing-page-ptbr-html-css-sass-jIMc_QKmDE)
+- Live Site URL: [https://wat-fylo.vercel.app/](https://wat-fylo.vercel.app/)
 
 ## My process
 
